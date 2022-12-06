@@ -1,0 +1,70 @@
+-- Drop tables
+ALTER TABLE Address
+    DROP CONSTRAINT Adress_City;
+ALTER TABLE Cargo
+    DROP CONSTRAINT Cargo_Additional_Licence;
+ALTER TABLE Cargo
+    DROP CONSTRAINT Cargo_Cargo_type;
+ALTER TABLE City
+    DROP CONSTRAINT City_Country;
+ALTER TABLE Client
+    DROP CONSTRAINT Client_Adress;
+ALTER TABLE Driver
+    DROP CONSTRAINT Driver_Adress;
+ALTER TABLE Driver
+    DROP CONSTRAINT Driver_Driving_Licence;
+ALTER TABLE Drivers_Licences
+    DROP CONSTRAINT Drivers_permissions_Driver;
+ALTER TABLE Drivers_Licences
+    DROP CONSTRAINT Drivers_permissions_Permission;
+ALTER TABLE Truck_Model
+    DROP CONSTRAINT Model_Brand;
+ALTER TABLE "Order"
+    DROP CONSTRAINT Order_Address;
+ALTER TABLE "Order"
+    DROP CONSTRAINT Order_Client;
+ALTER TABLE TruckSet
+    DROP CONSTRAINT Order_TruckSet_Driver;
+ALTER TABLE Order_details
+    DROP CONSTRAINT Order_details_Cargo;
+ALTER TABLE Order_details
+    DROP CONSTRAINT Order_details_Order;
+ALTER TABLE TruckSet
+    DROP CONSTRAINT Table_29_Trailer;
+ALTER TABLE TruckSet
+    DROP CONSTRAINT Table_29_Truck_Tractor;
+ALTER TABLE Trailer
+    DROP CONSTRAINT Trailer_Last_Service;
+ALTER TABLE Trailer_Model
+    DROP CONSTRAINT Trailer_Model_Brand;
+ALTER TABLE Trailer_Model
+    DROP CONSTRAINT Trailer_Model_Cargo_type;
+ALTER TABLE Trailer
+    DROP CONSTRAINT Trailer_Trailer_Model;
+ALTER TABLE Truck
+    DROP CONSTRAINT Truck_Tractor_Last_Service;
+ALTER TABLE Truck
+    DROP CONSTRAINT Truck_Truck_Model;
+ALTER TABLE TruckSet
+    DROP CONSTRAINT Trucks_Order;
+
+-- tables
+DROP TABLE Additional_Licence;
+DROP TABLE Address;
+DROP TABLE Brand;
+DROP TABLE Cargo;
+DROP TABLE Cargo_type;
+DROP TABLE City;
+DROP TABLE Client;
+DROP TABLE Country;
+DROP TABLE Driver;
+DROP TABLE Drivers_Licences;
+DROP TABLE Driving_Licence;
+DROP TABLE Last_Service;
+DROP TABLE "Order";
+DROP TABLE Order_details;
+DROP TABLE Trailer;
+DROP TABLE Trailer_Model;
+DROP TABLE Truck;
+DROP TABLE TruckSet;
+DROP TABLE Truck_Model;
